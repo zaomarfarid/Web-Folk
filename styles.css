@@ -1,71 +1,56 @@
-body {
-    margin: 0;
-}
-
 nav {
-    background-color: rgb(13, 13, 77);
+    background-color: #360836;
 }
 
 ul {
     max-width: 600px;
-    width: 100%;
     margin: 0 auto;
     padding: 0;
     height: 3.2em;
     list-style: none;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
 }
 
-a {
+li a {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5em;
-    color: rgb(211, 22, 110);
+    font-size: 1.2rem;
+    color: #FF5E8B;
     text-decoration: none;
 }
 
-.body {
+.hero {
+    overflow: auto;
     background-image: url(images/cover.png);
     background-size: cover;
-    background-repeat: no-repeat;
 }
 
-.container {
+.contain {
     max-width: 600px;
     margin: 0 auto;
-    font-family: monospace;
+    font-family: serif;
     font-size: 2em;
     text-align: center;
     color: white;
 }
 
-h1 {
-    padding: 1em 0;
-    margin-block-start: 0;
-    margin-block-end: 0;
+.contain h1 {
+    padding: 0;
     font-size: 3.5em;
-    font-family: sans-serif;
     font-style: italic;
 }
 
-p {
-    margin-top: 2em;
-    line-height: 1.5em;
-}
-
-.dots {
-    margin: 1em 0;
-    font-weight: bold;
+.contain .dots {
+    font-size: 5rem;
+    margin: 0;
 }
 
 .box {
-    max-width: 350px;
-    margin: 0 auto;
-    padding: 1.5em;
-    background-color: #ac0000;
+    max-width: 300px;
+    margin: auto;
+    padding: 1rem;
+    background-color: #FF0048;
 }
 
 .arrow-down {
@@ -77,12 +62,16 @@ p {
     height: 0;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
-    border-top: 20px solid #ac0000;
+    border-top: 20px solid #FF0048;
 }
 
-img {
+.photos img {
     width: 25%;
     float: left;
+}
+
+.folks {
+    margin-top: 2em;
 }
 
 footer {
@@ -93,5 +82,14 @@ footer {
     justify-content: center;
     margin: 0 auto;
     padding: 1em;
-    background-color: #ac0000;
+    background-color: #FF0048;
+}
+
+figure img {
+    width: 100%;
+    padding: 0;
+}
+
+.row>* {
+    padding: 0;
 }
